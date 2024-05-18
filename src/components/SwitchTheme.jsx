@@ -20,7 +20,7 @@ function Toggle() {
         checked={isDarkMode}
         onChange={handleChange}
         className={`${
-          isDarkMode ? "bg-dark-milk" : "bg-bg-dark"
+          isDarkMode ? "bg-bg-dark" : "bg-bg-dark"
         } relative inline-flex h-7 w-10  items-center shadow-2xl rounded-full `}
       >
         <span className="sr-only">Enable notifications</span>

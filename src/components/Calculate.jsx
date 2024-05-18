@@ -15,7 +15,7 @@ const Calculate = () => {
       const answer = eval(input);
       SetResults(answer);
     } catch (error) {
-      return SetResults("Invalid Mathematical operation");
+      return SetResults("Invalid operation");
     }
   };
 
@@ -36,23 +36,23 @@ const Calculate = () => {
             {input}
           </div>
         </div>
-        <div className="flex-col gap-2 rounded-xl section-2 w-full p-2 bg-dark-milk  dark:bg-bg-dark shadow-md mt-3 pt-4">
+        <div className=" flex-col gap-2 rounded-xl section-2 w-full p-2 bg-dark-milk  dark:bg-bg-dark shadow-md mt-3 pt-4">
           <div className="col flex flex-row gap-3 justify-center w-full  mb-3">
             <div
               onClick={(e) => addToInput(e.target.textContent)}
-              className="row w-[20%] py-2 cursor-pointer  rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
+              className="hover:scale-110 hover:transition-all row w-[20%] py-2 cursor-pointer  rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
             >
               7
             </div>
             <div
               onClick={(e) => addToInput(e.target.textContent)}
-              className="row w-[20%] py-2  cursor-pointer rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
+              className="hover:scale-110 hover:transition-all row w-[20%] py-2  cursor-pointer rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
             >
               8
             </div>
             <div
               onClick={(e) => addToInput(e.target.textContent)}
-              className="row w-[20%] py-2 cursor-pointer  rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
+              className="hover:scale-110 hover:transition-all row w-[20%] py-2 cursor-pointer  rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
             >
               9
             </div>
@@ -61,7 +61,7 @@ const Calculate = () => {
               onClick={() => {
                 SetInput((prevInput) => prevInput.slice(0, -1));
               }}
-              className="row  bg-dark-teal w-[20%] py-2  cursor-pointer rounded-md font-bold  text-[28px] text-bg-milk text-center"
+              className="hover:scale-110 hover:transition-all row  bg-dark-teal w-[20%] py-2.5  cursor-pointer rounded-md font-bold  text-[28px] text-bg-milk text-center"
             >
               DEL
             </div>
@@ -69,25 +69,25 @@ const Calculate = () => {
           <div className="col flex flex-row gap-3 justify-center w-full mb-3">
             <div
               onClick={(e) => addToInput(e.target.textContent)}
-              className="row w-[20%] py-2 cursor-pointer  rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
+              className=" row w-[20%] py-2 cursor-pointer  rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
             >
               4
             </div>
             <div
               onClick={(e) => addToInput(e.target.textContent)}
-              className="row w-[20%] py-2 cursor-pointer  rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
+              className="hover:scale-110 hover:transition-all row w-[20%] py-2 cursor-pointer  rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
             >
               5
             </div>
             <div
               onClick={(e) => addToInput(e.target.textContent)}
-              className="row w-[20%] py-2 cursor-pointer  rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
+              className="hover:scale-110 hover:transition-all row w-[20%] py-2 cursor-pointer  rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
             >
               6
             </div>
             <div
               onClick={(e) => addToInput(e.target.textContent)}
-              className="row w-[20%] py-2 cursor-pointer rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
+              className="hover:scale-110 hover:transition-all row w-[20%] py-2 cursor-pointer rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
             >
               +
             </div>
@@ -95,25 +95,25 @@ const Calculate = () => {
           <div className="col flex flex-row gap-3 justify-center w-full mb-3">
             <div
               onClick={(e) => addToInput(e.target.textContent)}
-              className="row w-[20%] py-2 cursor-pointer rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
+              className="hover:scale-110 hover:transition-all row w-[20%] py-2 cursor-pointer rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
             >
               1
             </div>
             <div
               onClick={(e) => addToInput(e.target.textContent)}
-              className="row w-[20%] py-2 cursor-pointer rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
+              className="hover:scale-110 hover:transition-all row w-[20%] py-2 cursor-pointer rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
             >
               2
             </div>
             <div
               onClick={(e) => addToInput(e.target.textContent)}
-              className="row w-[20%] py-2 cursor-pointer rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
+              className="hover:scale-110 hover:transition-all row w-[20%] py-2 cursor-pointer rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
             >
               3
             </div>
             <div
               onClick={(e) => addToInput(e.target.textContent)}
-              className="row w-[20%] py-2 cursor-pointer rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
+              className="hover:scale-110 hover:transition-all row w-[20%] py-2 cursor-pointer rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
             >
               -
             </div>
@@ -127,25 +127,25 @@ const Calculate = () => {
                   } else return prevInput + e.target.textContent;
                 });
               }}
-              className="row w-[20%] py-2 cursor-pointer  rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
+              className="hover:scale-110 hover:transition-all row w-[20%] py-2 cursor-pointer  rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
             >
               .
             </div>
             <div
               onClick={(e) => addToInput(e.target.textContent)}
-              className="row w-[20%] py-2 cursor-pointer  rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
+              className="hover:scale-110 hover:transition-all row w-[20%] py-2 cursor-pointer  rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
             >
               0
             </div>
             <div
               onClick={(e) => addToInput(e.target.textContent)}
-              className="row w-[20%] py-2 cursor-pointer  rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
+              className="hover:scale-110 hover:transition-all row w-[20%] py-2 cursor-pointer  rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
             >
               /
             </div>
             <div
               onClick={(e) => addToInput(e.target.textContent)}
-              className="row w-[20%] py-2 cursor-pointer  rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
+              className="hover:scale-110 hover:transition-all row w-[20%] py-2 cursor-pointer  rounded-md font-bold text-bg-navy text-[28px] bg-bg-milk text-center"
             >
               *
             </div>
@@ -156,7 +156,7 @@ const Calculate = () => {
                 SetInput("");
                 SetResults("");
               }}
-              className="row w-[45%] text-bg-milk bg-dark-teal py-2 cursor-pointer  rounded-md font-bold  text-[28px] text-center"
+              className="hover:scale-110 hover:transition-all row w-[45%] text-bg-milk bg-dark-teal py-2 cursor-pointer  rounded-md font-bold  text-[28px] text-center"
             >
               RESET
             </div>
@@ -165,7 +165,7 @@ const Calculate = () => {
                 calculateResults(input);
                 SetPressed(true);
               }}
-              className="row w-[45%] text-bg-milk bg-light-brown py-2 cursor-pointer  rounded-md font-bold  text-[28px] text-center"
+              className="hover:scale-110 hover:transition-all row w-[45%] text-bg-milk bg-light-brown py-2 cursor-pointer  rounded-md font-bold  text-[28px] text-center"
             >
               =
             </div>

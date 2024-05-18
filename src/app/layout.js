@@ -17,7 +17,6 @@ export default function RootLayout({ children }) {
           <ThemeProvider
             attribute="class"
             defaultTheme="light"
-            // defaultTheme="system"
             enableSystem
             disableTransitionOnChange
           >
@@ -25,10 +24,10 @@ export default function RootLayout({ children }) {
               <h1 className="w-[25%] ml-2 font-semibold text-[32px] p-2">
                 calc
               </h1>
-              <h1 className=" w-[40%] flex justify-end font-semibold align-middle  text-center py-4 text-[20px]  mr-1">
+              <h1 className=" w-[30%] flex justify-end font-semibold align-middle  text-right py-6 text-[16px]  mr-1">
                 THEME
               </h1>
-              <div className="w-[35%] justify-end flex flex-row ml-1 mr-0 ">
+              <div className="w-[45%] justify-end flex flex-row ml-1 mr-0 ">
                 <SwitchTheme />
               </div>
             </div>
